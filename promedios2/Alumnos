@@ -1,0 +1,43 @@
+package promedios2;
+public class Alumnos {
+    String [] num= new String[15];
+    String [] nombre = new String[15];
+    
+    public String [] mentodoNum (String num[]){
+        num[0]= "17680136";
+        num[1]= "17680246";
+        num[2]= "17680227";
+        num[3]= "18680056";
+        num[4]= "19680091";
+        num[5]= "19680092";
+        num[6]= "19680113";
+        num[7]= "18680108";
+        num[8]= "19680957";
+        num[9]= "19680144";
+        num[10]= "196860156";
+        num[11]= "19680162";
+        num[12]= "19680958";
+        num[13]= "19680177";
+        num[14]= "18680163";
+        return num;
+    }
+    
+    public String [] mentodoNombre (String nombre[]){
+        nombre[0]= "Diaz Rosa Alexis Efren";
+        nombre[1]= "Villanueva Ahumada Kate";
+        nombre[2]= "Santamaria Vera Iris Itzel";
+        nombre[3]= "Acevedo Campos Ariagna";
+        nombre[4]= "Ambrocio Perez Michael Haziel";
+        nombre[5]= "Ambrosio Hernandez Vianey Celerina";
+        nombre[6]= "Campos Casasanero Juan Pablo";
+        nombre[7]= "Dominguez Cazales Jennifer Irlanda";
+        nombre[8]= "Eligio Ramos Monserrat";
+        nombre[9]= "Flores Maldonado Liliana";
+        nombre[10]= "Gomez Aragon Edgar Omar";
+        nombre[11]= "Guitierrez Valle Samara";
+        nombre[12]= "Juarez Ramos Alexis Manuel";
+        nombre[13]= "Leyva Silvas Rogelio Jesus";
+        nombre[14]= "Martinez de los Santos Isabel";
+        return nombre;
+    }
+}
