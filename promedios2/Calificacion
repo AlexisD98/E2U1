@@ -1,0 +1,21 @@
+package promedios2;
+
+public class Calificacion {
+    int resultado;
+    
+    public int [] general (int cal[]){
+        resultado =(cal[0]+ cal[1]+ cal[2]+ cal[3]+ cal[4]+ cal[5]+ cal[6]+ cal[7]+ cal[8]+ cal[9]+ cal[10]+ cal[11]+ cal[12]+ cal[13]+ cal[14])/15;
+        System.out.println("Promedio General es: "+resultado);
+        return cal;
+    }
+    public int [] cincop (int cal[]){
+        resultado =(cal[0]+ cal [1]+ cal [2]+ cal [3]+ cal [4])/5 ;
+        System.out.println("Promedio Primeros 5: "+resultado);
+        return cal;
+    }
+    public int [] cincou (int cal[]){
+        resultado =(cal[10]+cal[11]+cal[12]+cal[13]+cal[14])/5;
+        System.out.println("Promedio Ultimos 5: "+resultado);
+        return cal;
+    }
+}
