@@ -1,0 +1,66 @@
+package promedios2;
+import java.util.*;
+
+public class Inicio {
+    //Variables Globales
+    Scanner sc=new Scanner (System.in);
+    int opc;
+    int c=0;
+    
+    //Cadenas tipo String e int
+    String [] num= new String[15];
+    String [] nombre = new String[15];
+    int cal[] = new int[15];
+    
+    //Instancias
+    Calificacion instanciaCalificacion = new Calificacion();
+    Alumnos instanciaAlumnos = new Alumnos();
+    
+    public void metodoInicio(){
+        //Instancias
+        instanciaAlumnos.mentodoNum(num);
+        instanciaAlumnos.mentodoNombre(nombre);
+        
+        
+        System.out.println("Ingrese Calificaciones: ");
+        for(int i=0; i<15;i++){
+            System.out.println(num[i]+" "+nombre[i]+" ");
+            cal[i]=sc.nextInt();
+        }
+        
+        do{
+          System.out.println(" *Promedios GamerPink* ");
+          System.out.println("-----------------------------");
+          System.out.println("Selecciones su Opcion: ");
+          System.out.println("1.Promedio de la clase");
+          System.out.println("2.Promedio 5 primeros");
+          System.out.println("3.Promedio 5 ultimos");
+          System.out.println("4. Salir");
+          System.out.println("-----------------------------");
+          opc=sc.nextInt();
+          
+          switch(opc){
+            case 1:
+                instanciaCalificacion.general(cal);
+                break;
+            case 2:
+                instanciaCalificacion.cincop(cal);
+                break;
+            case 3:
+                instanciaCalificacion.cincou(cal);
+                break;
+            case 4:
+                System.exit(0);
+                break;
+            default:
+                System.out.println("Opcion Invalida");
+                break;
+            }//Switch
+                System.out.println("¿Desea realizar otra accion? 1.Si 2.No");
+                c = sc.nextInt();
+        }while(c==1);
+            System.out.println("Vuelva Pronto");
+            
+    
+}
+}
