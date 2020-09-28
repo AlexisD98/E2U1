@@ -1,0 +1,12 @@
+/*Diaz Rosas Alexis Efrén Nc:17680136
+ * Estructura de Datos
+ * Tarea 2
+*/
+package promedios2;
+public class Main {
+    public static void main(String[] args) {
+        Inicio instanciaInicio = new Inicio();
+        instanciaInicio.metodoInicio();
+    }
+    
+}
